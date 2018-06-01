@@ -8,7 +8,7 @@
 		int main() {
 			int lowerLimits, upperLimits;
 			scanf("%d%d", &lowerLimits, &upperLimits);
-			printPrimes(lowerlimits, upperlimits);
+			printPrimes(lowerLimits, upperLimits);
 			return 0;
 				}
 
@@ -16,16 +16,17 @@
 			while(lowerLimits<=upperLimits) {
 				if(isPrime(lowerLimits))
 					printf("%d, ", lowerLimits);
-				lowerLimits++
+				lowerLimits++;
 				}
 			}
 
 
 		int isPrime(int num) {
-				i=2;
-			for(i=2; i=num/2; i++) {
+				int	i=2;
+			for(i=2; i<=num/2; i++) {
 				if(num % i ==0) 
 					return 0;
+				}
 				return 1;
-			}
+			
 		}
